@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "GridRef": "368000.0#326000.0", "Records": 1, "Abundance": 1, "Richness": 1, "Taxa": "" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -2.476398769701061, 52.830565108148036 ], [ -2.476595659144282, 52.848543302708499 ], [ -2.446899629762176, 52.848658851369642 ], [ -2.446715000422616, 52.830680581988439 ], [ -2.476398769701061, 52.830565108148036 ] ] ] } }
+]
+}

@@ -1,0 +1,211 @@
+﻿<div style="position: relative">
+
+    <div id="tombioInfoDialog">
+        <div id="tombioInfoAccordion">
+            <h3>Overview</h3>
+            <div id="tombioAtlasOverview"></div>
+
+            <h3>Using the online maps</h3>
+            <div>
+                <p>
+                    The primary purpose of these online maps is to enable you, as a contributor to
+                    the local recording, see which areas are in most need of more records,
+                    examine the current known distribution of each species and determine if new records
+                    will help 'fill the gaps'.
+                    When the page opens you will see a map showing only the outline of the vice county.
+
+                    <div class="help-pictures-div">
+                        <img class="help-picture" src="/sites/maps/atlasv1/resources/mapselection.png">
+                        <div class="help-picture-caption"></div>
+                    </div>
+                    From the drop-down list initially labelled <b>Select species</b>
+                    you can display distribution maps. Records for all species together
+                    can be shown by selecting <b>All species</b>, otherwise maps for individual species
+                    can be selected. Maps are shown with records aggregated
+                    at hectad (10 km), quadrant (5 km), tetrad (2 km) and monad (1 km) levels. The aggregation
+                    level can be set from the relevant drop down list. From the
+                    drop-down list initially labelled <b>No summary label</b> you can choose to label the
+                    atlas squares with either the number of records made within that square or the
+                    number of species recorded (the latter only relevant for the map of all species).
+                    The maps below shows a distribution map for a species
+                    at 5 km (quadrant) level, labelled with the number of records.
+                </p>
+                <img class="help-picture" src="/sites/maps/atlasv1/resources/5kmdistribution.png" style="width:100%">
+                <p>
+                    <div class="help-pictures-div">
+                        <img class="help-picture" src="/sites/maps/atlasv1/resources/basemapbing.png">
+                    </div>
+                    You can see where the gaps are. To look for possible sampling sites in those gaps,
+                    display a basemap. From the
+                    drop-down list initially labelled <b>No basemap</b> you can select a basemap to
+                    give context to the distribution map. The one below shows the Bing basemap.
+                </p>
+                <img class="help-picture" src="/sites/maps/atlasv1/resources/bingmap.png" style="width:100%">
+                <p>
+                    <div class="help-pictures-div">
+                        <img class="help-picture" src="/sites/maps/atlasv1/resources/mapcontrols.png">
+                        <img class="help-picture" src="/sites/maps/atlasv1/resources/gazetteer.png">
+                    </div>
+                    You can zoom in and out using your mouse-wheel or by clicking on the <b>+</b> button in the top
+                    left of the map to zoom in and the <b>-</b> button to zoom out. You can also quickly zoom to the
+                    entire extent of the vice county by clicking the <b>V</b> button. When you get really
+                    close and want to see fine detail, choose a different basemap such as the Ordnance Survey
+                    or Bing Aerial photography. With these you can see enough detail to choose precise
+                    locations to survey. The <b>G</b> button invokes a gazetter dialog where you can
+                    type in the name of a place and click
+                    the <b>Find place</b> button. The map will zoom to the place if one is found. If more than
+                    one match is found, each is selectable from the drop-down list immediately below the find
+                    button.
+                </p>
+                <p>
+                    <div class="help-pictures-div">
+                        <img class="help-picture" src="/sites/maps/atlasv1/resources/fader.png">
+                    </div>
+                    The slider control just below the map zoom controls allows you to fade the background
+                    map in and out. This can be helpful if you are using a backdrop map which overpowers
+                    the distribution maps.
+                </p>
+
+                <p>
+                    <div class="help-pictures-div">
+                        <img class="help-picture" src="/sites/maps/atlasv1/resources/10kmgrid.png">
+                        <br />
+                        <img class="help-picture" src="/sites/maps/atlasv1/resources/gridlabels.png">
+                    </div>
+                    From the drop-down list intially labelled <b>No grid</b> you can select a grid to overlay
+                    the vice county boundary. As with the distribution maps, you can select
+                    hectad (10 km), quadrant (5 km), tetrad (2 km) or monad (1 km) levels. The checkbox immediately
+                    to the right of the drop-down list lets you decide whether or not to show labels
+                    that indicate the OS grid reference corresponding to each square.
+                    Note that
+                    even if this checkbox is selected, the labels will only appear when you are zoomed in close
+                    enough for the labels to be shown without overlapping each other.
+                </p>
+                <p>
+                    The map below is displaying the Ordnance Survey 1:50,000 basemap, a hectad (10 km) grid with
+                    labels and a distribution map for all species records aggregated at the quadrant (5km) level.
+                </p>
+                <img class="help-picture" src="/sites/maps/atlasv1/resources/closeupmap.png" style="width:100%">
+                <p>
+                    <div class="help-pictures-div">
+                        <img class="help-picture" src="/sites/maps/atlasv1/resources/exportpng.png">
+                    </div>
+                    If you use certain browsers, e.g. Google Chrome, Firefox or Opera, the <b>Export PNG</b>
+                    button appears in the bottom-left of the map. If you click this the map image currently displayed
+                    is downloaded to your browser. It enables you to quickly take snapshots of areas of interest
+                    to you. The feature is not available with Internet Explorer or Safari.
+                </p>
+
+                <div id="tombioUsingExtend"></div>
+            </div>
+
+            <h3>The technology</h3>
+            <div>
+                <div class="help-pictures-div">
+                    <img class="help-picture" src="/sites/maps/atlasv1/resources/ol3.png">
+                </div>
+                <p>
+                    The Tom.bio online mapping is a Javascript program  created using OpenLayers3 library
+                    for the mapping
+                    and jQuery UI for other features of the user-interface. Several background map
+                    layers - available free of charge via OpenLayers3 - have been provided in
+                    the tool, mostly from Bing Maps (including the Ordnance Survey 1:50,000 maps).
+                </p>
+                <p>
+                    The  vice county-specific layers (e.g. Shropshire boundary and OS grids)
+                    have been exported to our web-server from QGIS as GeoJSON files.
+                </p>
+                <p>
+                    The species distribution GeoJSON map layers are generated by the Tom.bio QGIS plugin for
+                    biological recorders and then exported to our web server. The
+                    layers are generated from a master spreadsheet
+                    of biological records. See the overview section to understand where that spreadsheet
+                    comes from. The latest
+                    version of this spreadsheet is periodically used to update the map layers on the website.
+                    Because it runs as a very fast semi-automated process, we can ensure that the species distribution
+                    layers on the website reflect the current known state. The red label in the top-right
+                    of the map tells you when the data used to generate the maps were last updated.
+                </p>
+                <p>
+                    OpenLayers presents maps
+                    using the Sperical Mercator projection (EPSG:3857).
+                    An upshot of this is that
+                    grid-lines may not always appear absolutely square to the map view rectangle.
+                </p>
+                <p>
+                    The gazetteer makes use of the Bing Location API.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="tombioMain">
+        <!--<button id="tombioOptionsButton">Options</button>-->
+
+        <div id="tombioControls">
+            <button id="tombioInfoButton">Info</button>
+            <select id="mapBase">
+                <option value="none" selected>No basemap</option>
+                <option value="road">Bing road</option>
+                <option value="collinsBart">Collins Bart</option>
+                <option value="ordnanceSurvey">Ordnance Survey</option>
+                <option value="aerial">Bing aerial</option>
+                <option value="aerialWithLabels">Bing Aerial +labels</option>
+                <option value="osm">Open Street Map</option>
+                <option value="ocm">Open Cycle Map</option>
+                <option value="stamen">Stamen watercolor</option>
+            </select>
+            <select id="mapGrid">
+                <option value="none" selected>No grid</option>
+                <option value="hectads">10 km grid</option>
+                <option value="quadrants">5 km grid</option>
+                <option value="tetrads">2 km grid</option>
+                <option value="monads">1 km grid</option>
+            </select>
+            <div id="gridLabelsDiv" class="ui-widget"><input type="checkbox" id="gridLabels" checked="checked"><label id="gridLabelsLabel" for="gridNone">Grid labels</label></div>
+            <br/>
+            <select id="atlasSummary">
+                <option value="none" selected>Select species</option>
+                <option value="all">All species</option>
+            </select>
+
+            <select id="precisionLevel">
+                <option value="monad">Monad (1 km)</option>
+                <option value="tetrad" selected>Tetrad (2 km)</option>
+                <option value="quadrant">Quadrant (5 km)</option>
+                <option value="hectad">Hectad (10 km)</option>
+            </select>
+
+            <select id="atlasSummaryLabel">
+                <option value="none" selected>No summary label</option>
+                <option value="records">Show record no.</option>
+                <option value="species">Show species no.</option>
+            </select>
+
+            <select id="atlasSubselect">
+
+            </select>
+        </div>
+
+        <div id="mapContainer" style="position: relative">
+
+            <img id="bannerImage" />
+
+            <div id="lastUpdatedText"></div>
+
+            <div class="ol-control ol-unselectable"><button id="gazToggle">G</button></div>
+            <div id="mapDefSlider"></div>
+            <div id="gazControls">
+                <input type="text" id="gazSearch">
+                <button id="gazButton">Find place</button><br/>
+                <select id="gazSearchResults"></select>
+            </div>
+            <a id="export-png" download="map.png">Export PNG</a>
+            <div id="tombiomap"></div>
+        </div>
+        
+        <!--<div class="ui-widget" style="display:inline-block">&nbsp;</div>-->
+        <div style="height:20px">&nbsp;<div id="squareinfo" class="ui-widget"><span class="sqlab">Square: </span><span id="sqref">SJ34NM</span><span class="sqlab">; records: </span><span id="sqrecs">3</span><span class="sqlab">; species: </span><span id="sqspec">1</span></div></div>  
+    </div>
+</div>

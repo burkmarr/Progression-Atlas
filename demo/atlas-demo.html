@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Demo atlas</title>
+
+    <script type="text/javascript" src="/sites/maps/atlasv1/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/sites/maps/atlasv1/jquery/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="/sites/maps/atlasv1/jquery/jquery-ui-1.11.4.custom/jquery-ui.css">
+    <link rel="stylesheet" href="/sites/maps/atlasv1/jquery/jquery-ui-1.11.4.custom/jquery-ui.theme.css">
+
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.11.1/css/ol.css" type="text/css">
+    <script src="http://openlayers.org/en/v3.11.1/build/ol.js"></script>
+
+    <script>
+        var geoext = "geojson"
+        var tombiover = "18042016";
+        var tombiolayers = "/sites/maps/atlasv1/demo/earthwormsVC40/layers/";
+        var tombiobasemaps = "/sites/maps/atlasv1/demo/basemapsVC40/";
+        var tombiomaprotation = 0.0113;
+        var tombiotaxa = "/sites/maps/atlasv1/demo/earthwormsVC40/species.txt";
+        var tombiozoomlabel = "V";
+        var tombioinitextent = [-364000, 6854000, -247000, 6992000];
+        var tombioinitzoom = 9;
+        var tombiogazconstraint = "shropshire";
+        var tombiosubselect = "/sites/maps/atlasv1/demo/earthwormsVC40/datasources.txt";
+        var tombiobannerimg = "/sites/maps/atlasv1/demo/earthwormsVC40/resources/banner-image.png";
+        var tombiobannertext = "Earthworm by Charlie Bell";
+        var tombioatlasoverview = "/sites/maps/atlasv1/demo/earthwormsVC40/overview.html";
+        var tombiousingextend = "/sites/maps/atlasv1/demo/earthwormsVC40/datasources.html";
+    </script>
+
+    <script type="text/javascript" src="/sites/maps/atlasv1/atlas.js?ver=18042016"></script>
+    <link rel="stylesheet" href="/sites/maps/atlasv1/atlas.css?ver=18042016">
+</head>
+<body leftmargin="200px">
+    <h1>headers</h1>
+    <div id="tombiobigdiv"></div>
+    <h1 style="width: 100%">footers</h1>
+</body>
+</html>

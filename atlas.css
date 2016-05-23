@@ -1,0 +1,206 @@
+﻿ body {
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; 
+}
+ 
+#tombiomap {
+    width: 100%;
+    height: 520px;
+    border: 1px solid black;
+}
+
+ #tombioInfoDialog {
+    padding: 0 0 0 0;
+}
+
+ #tombioControlsTable {
+     margin: 0;
+}
+
+#tombioControlsTable tr td {
+     background-color: white;
+     border-bottom: 1px solid white !important;
+}
+
+
+#tombioMapControls {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+#tombioCloseInfo {
+    float:right;
+    height: 16px;
+    margin-left: 5px;
+}
+
+#tombioControls button {
+    /*Some of these required to make button and drop-down look/align the same in top row*/
+    width: 155px;
+    vertical-align: top;
+    padding: 1px; 
+    margin-bottom: 5px;
+}
+#tombioControls select {
+    width: 155px;
+}
+
+#atlasSummary{
+    width: 314px !important;
+}
+.summaryFixed {
+    width: 312px !important;
+}
+.summary100 {
+    width: 100% !important;
+}
+
+.ui-icon-info20 { 
+    background-image: url(resources/info20.png) !important; 
+    background-size: 16px 16px;
+}
+.ui-icon-options { 
+    background-image: url(resources/options.png) !important; 
+    background-size: 15px 15px;
+}
+
+.ui-front {
+    z-index: 9000;  /*Requred to make dialog & overlay appear over OpenSpace map view portal*/
+}
+
+.ui-widget {
+    font-size: 12px;
+}
+
+.ui-widget-overlay {
+    background: #077678 repeat;
+    opacity: 0.7;
+}
+
+
+td {
+    padding: 2px;
+}
+
+#gridLabelsDiv{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7px;
+    font-weight: normal;
+}
+
+#gridLabelsLabel {
+    display: inline-block;
+    font-weight: normal;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+#squareinfo{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.sqlab {
+    font-weight: normal;
+}
+
+/*.rotate-north {
+  top: 65px;
+  left: .5em;
+}
+.ol-touch .rotate-north {
+  top: 80px;
+}*/
+
+#mapDefSlider {
+    position: absolute;
+    z-index: 1000;
+    height: 100px;
+    left: 18px;
+    top: 170px;
+}
+
+#gazToggle {
+    position: absolute;
+    z-index: 1000;
+    left: 11px;
+    top: 120px;
+}
+
+#gazControls {
+}
+
+.ui-dialog {
+    overflow: visible;
+}
+
+#gazSearch {
+    vertical-align: top;
+    height: 20px;
+    padding: 3px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    width: 65%;
+}
+
+#gazSearchResults {
+    width: 272px;
+}
+
+#gazButton {
+    vertical-align: top;
+    height: 28px;
+    padding: 3px;
+    width: 30%;
+}
+
+.ol-control button {
+    background-image: none;
+}
+
+ #bannerImage {
+     position: absolute;
+     height: 100px;
+     right: 0;
+     top: -100px;
+     z-index: -1;
+ }
+
+#lastUpdatedText {
+    display: inline-block;
+    position:absolute;
+    z-index: 1000;
+    right: 10px;
+    top: 10px;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px 2px 5px;
+}
+#export-png {
+    position: absolute;
+    z-index: 1000;
+    left: 10px;
+    bottom: 10px;
+    text-decoration: none !important;
+}
+
+.help-pictures-div {
+    float: right;
+    margin-left: 2em;
+}
+.help-picture {
+}
+.help-text {
+    position: relative;
+    top: -1em;
+}
+.help-picture-caption{
+    margin: 0 0 1.5em 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
